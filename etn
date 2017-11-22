@@ -23,3 +23,9 @@ then
     echo Opening Neotracker
     open https://neotracker.io/wallet
 fi
+
+if [ "$1" = "docs" ]
+then
+    echo Opening Docs
+    open https://github.com/Triangle-MX/etn-shell
+fi
