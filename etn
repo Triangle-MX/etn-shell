@@ -5,11 +5,16 @@ then
     echo Specify a Routine
 fi
 
-if [ "$1" = "mine" ]
+if [ "$1" = "mine-1" ]
 then
-    echo Mining Electroneum
-    # Path to the start.sh file
+    echo Mining Electroneum with 8 cores
     /Users/jpiglesias/Downloads/minekitten.miner.mac.cpu/start.sh
+fi
+
+if [ "$1" = "mine-2" ]
+then
+    echo Mining Electroneum with 4 Cores
+    /Users/jpiglesias/Downloads/minekitten.miner.mac.cpu1/start.sh
 fi
 
 if [ "$1" = "stats" ]
@@ -22,6 +27,18 @@ if [ "$1" = "ops" ]
 then
     echo Opening Neotracker
     open https://neotracker.io/wallet
+fi
+
+if [ "$1" = "value" ]
+then
+    echo Opening BitInfo
+    open https://bitinfocharts.com/electroneum/
+fi
+
+if [ "$1" = "wallet" ]
+then
+    echo Your Wallet Adress:
+    echo etnkMqY42w7GPGnXRKBs2qRahKTp6nTKCMiiB2TiiTwf8FqoBRedcAR9rcuvDuMzJnLcGUTby9x8YYRYgTTd6Lwz6bjtH6pSjm
 fi
 
 if [ "$1" = "docs" ]
